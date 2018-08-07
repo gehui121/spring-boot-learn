@@ -18,3 +18,6 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 	
 第十二章：
 	学习SpringBoot项目中使用LogBack记录日志到控制台和文件之中，根据不同的级别输出不同形式日志信息。
+	
+第十三章：
+	SpringBoot实战SpringDataJPA
