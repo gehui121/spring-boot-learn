@@ -13,3 +13,8 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 	手动装配的方式：没有成功
 	自动装配：可以匹配多个servlet，创建SpringBoot配置类，在配置类内添加@ServletComponentScan和@Configuration两个注解，在servlet类中添加@WebServlet(urlPatterns = "/test2")注解及路径映射
 		
+第十一章：
+	遇到的问题时页面传入的多文件在controller层接收不到
+	
+第十二章：
+	学习SpringBoot项目中使用LogBack记录日志到控制台和文件之中，根据不同的级别输出不同形式日志信息。
