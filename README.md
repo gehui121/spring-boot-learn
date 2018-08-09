@@ -24,19 +24,22 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 	
 第十四章：本章主要讲解了SpringBoot项目下SpringDataJPA如果整合QueryDSL完成查询操作，单独QueryDSL查询如何完成查询，简单封装了查询对象Inquirer。
 	建表语句
-CREATE TABLE good_type(
-tt_id INT PRIMARY KEY AUTO_INCREMENT,
-tt_name VARCHAR(20),
-tt_is_show INT,
-tt_order INT
-);
+		CREATE TABLE good_type(
+			tt_id INT PRIMARY KEY AUTO_INCREMENT,
+			tt_name VARCHAR(20),
+			tt_is_show INT,
+			tt_order INT
+			);
 
-CREATE TABLE good_info(
-t_id INT PRIMARY KEY AUTO_INCREMENT,
-t_title VARCHAR(20),
-t_price DOUBLE(10,2),
-t_unit VARCHAR(20),
-t_order INT(11),
-t_type_id INT,
-CONSTRAINT FOREIGN KEY fk_emp(t_type_id) REFERENCES good_type(tt_id)
-);
+		CREATE TABLE good_info(
+			t_id INT PRIMARY KEY AUTO_INCREMENT,
+			t_title VARCHAR(20),
+			t_price DOUBLE(10,2),
+			t_unit VARCHAR(20),
+			t_order INT(11),
+			t_type_id INT,
+			CONSTRAINT FOREIGN KEY fk_emp(t_type_id) REFERENCES good_type(tt_id)
+		);
+
+第十五章：使用SpringBoot validator对参数进行校验，
+	自定义验证需要我们提供两个文件内容，一个是注解、另外一个是对应注解继承ConstraintValidator的实现类	
