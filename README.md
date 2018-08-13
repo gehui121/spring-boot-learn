@@ -43,3 +43,12 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 
 第十五章：使用SpringBoot validator对参数进行校验，
 	自定义验证需要我们提供两个文件内容，一个是注解、另外一个是对应注解继承ConstraintValidator的实现类	
+第十六章：
+	Redis数据库内有很多个命令下面我简单介绍几个大家在日常开发中常用到的。
+	flushdb：清空当前数据库。
+	select [index]：选择索引数据库，index为索引值名，如：select 1。
+	del [key]：删除一条指定key的值。
+	keys *：查看数据库内所有的key。
+	flushall：清空所有数据库。
+	quit：退出客户端连接。
+	
