@@ -51,4 +51,22 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 	keys *：查看数据库内所有的key。
 	flushall：清空所有数据库。
 	quit：退出客户端连接。
+第十七章：SpringSecurity是专门针对基于Spring项目的安全框架，充分利用了依赖注入和AOP来实现安全管控。
+	CREATE TABLE login_user(
+	u_id INT PRIMARY KEY AUTO_INCREMENT,
+	u_username VARCHAR(20) NOT NULL,
+	u_password VARCHAR(20) NOT NULL
+	);
+	CREATE TABLE roles(
+	r_id INT PRIMARY KEY AUTO_INCREMENT,
+	r_name VARCHAR(20) NOT NULL
+	);
+	CREATE TABLE user_roles(
+	ur_id INT PRIMARY KEY AUTO_INCREMENT,
+	ur_user_id INT,
+	ur_role_id INT,
+	FOREIGN KEY(ur_user_id) REFERENCES login_user(u_id),
+	FOREIGN KEY(ur_role_id) REFERENCES roles(r_id)
+	);
+	UserEntity实体类中的变量须与重写的UserDetails中的方法名保持一致，最好使用username
 	
