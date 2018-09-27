@@ -93,6 +93,7 @@ public class TokenController {
                     //生成jwttoken
                     tokenStr = createNewToken(appId);
                     //将token保存到数据库
+                    String appId1 = userDbInfo.get().getAppId();
                     tokenDbInfo.get().setAppId(userDbInfo.get().getAppId());
                     tokenDbInfo.get().setBindTime(String.valueOf(System.currentTimeMillis()));
                     tokenDbInfo.get().setToken(tokenStr.getBytes());
