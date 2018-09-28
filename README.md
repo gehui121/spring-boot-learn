@@ -71,4 +71,4 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 	UserEntity实体类中的变量须与重写的UserDetails中的方法名保持一致，最好使用username
 	
 第十八章：测试没有通过，
-	
+第二十二章：SpringBoot项目多模块运用与设计，测试通过
