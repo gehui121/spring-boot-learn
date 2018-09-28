@@ -72,3 +72,11 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 	
 第十八章：测试没有通过，
 第二十二章：SpringBoot项目多模块运用与设计，测试通过
+第二十三章：测试通过。
+	将服务部署到tomcat中需要修改server将服务部署到tomcat中需要修改server.xml文件，
+	在HOST标签下添加<Context path="项目名（可以不写）" docBase="D:\JAVA\Develop\Tomcat\apache-tomcat-8.5.34\webapps\pager项目解压后的路径" debug="0" reloadable="true" />
+	访问时需要在url路径下写项目名，
+	也可以在pom.xml文件中 添加打包名称
+		<build>
+			<finalName>pager</finalName>
+		</build> 
