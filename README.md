@@ -80,3 +80,6 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 		<build>
 			<finalName>pager</finalName>
 		</build> 
+第二十五章：基于SpringBooot项目搭建可以站外Ajax请求访问的跨域资源服务器。测试通过
+	index.xml放置在 resources下了，file:///C:/Users/Administrator/Desktop/index.html测试时放置在项目外，
+	
