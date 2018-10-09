@@ -80,6 +80,22 @@ SpringBoot默认给我们配置了静态资源的地址转发，我们只需要�
 		<build>
 			<finalName>pager</finalName>
 		</build> 
+第二十四章：项目报错		
 第二十五章：基于SpringBooot项目搭建可以站外Ajax请求访问的跨域资源服务器。测试通过
 	index.xml放置在 resources下了，file:///C:/Users/Administrator/Desktop/index.html测试时放置在项目外，
+	
+CREATE DATABASE books;
+USE books;
+CREATE TABLE t_user(
+	t_id INT NOT NULL PRIMARY KEY,
+	t_name VARCHAR(20),
+	t_age INT,
+	t_adress VARCHAR(100),
+	t_pwd VARCHAR(100)
+);
+CREATE TABLE book(
+	b_id INT NOT NULL PRIMARY KEY,
+	b_name VARCHAR(20)
+);
+
 	
