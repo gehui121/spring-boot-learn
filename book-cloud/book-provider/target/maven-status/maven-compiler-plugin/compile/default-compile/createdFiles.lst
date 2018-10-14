@@ -1,0 +1,6 @@
+com\gehui\BookProviderApplication.class
+com\gehui\service\impl\BookServiceImpl.class
+com\gehui\controller\BookProviderController.class
+com\gehui\service\BookService.class
+com\gehui\jpa\BookJPA.class
+com\gehui\entity\BookEntity.class

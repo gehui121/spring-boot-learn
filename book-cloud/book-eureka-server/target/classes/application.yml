@@ -1,0 +1,14 @@
+server:
+  port: 7005
+#配置eureka服务
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false #是否将自己注册到服务器上
+    fetchRegistry: false #是否检测客户端消费的服务是否存在
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #为注册服务提供注册地址
+
+
+

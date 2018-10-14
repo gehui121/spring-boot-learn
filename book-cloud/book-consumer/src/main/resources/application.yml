@@ -1,0 +1,26 @@
+server:
+  port: 7004
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  application:
+    name: book-consumer
+eureka:
+  instance:
+    prefer-ip-address: true #注册到注册中心的服务显示ip地址
+    instance-id: ${spring.application.name}:${server.port} #实例ID
+  client:
+    service-url:
+      defaultZone: http://localhost:7005/eureka/ #将服务注册到该地址
+
+
+
+
+
+
+
+
+
+
+
